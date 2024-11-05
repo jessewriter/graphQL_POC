@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "esnext",
+        "jsx": "react-jsx",
+        "strict": true,
+        "baseUrl": "./src",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "noEmit": true,
+    },
+    "include": [
+        "src",
+        ".eslintrc.cjs"
+    ],
+    "exclude": [
+        "node",
+        "webpack",
+        "dist",
+        "node_modules",
+        "**/node_modules/*"
+    ]
+}

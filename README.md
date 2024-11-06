@@ -1,4 +1,4 @@
-# graphql-playlist
+# graphQL POC
 Recommend this playlist to learn more about GraphQL + react + mongoDb + mongoose by Net Ninja an excellent teacher
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f
 
@@ -6,7 +6,7 @@ Node modules are not included in the course files. After download, run npm insta
 
 This is an updated FORK by Jesse Boyd of the original code by Net Ninja with modern react functional components, mongoDb Atlas and tanstack useQuery
 
-Backend: 
+## Backend: 
 Create a free account at https://www.mongodb.com/atlas 
 1.	Create a MongoDB NoSQL cloud instance.
 2.	Create a free account
@@ -15,8 +15,12 @@ Create a free account at https://www.mongodb.com/atlas
 5.	Note: current IP address will be allowed on setup for local connectivity
     a. you can allow all ips by clicking on the ip warning from your admin screen and allowing all ips there or just your new ip address
 
+####    Connecting to your unique data
+* create models of your data shapes
+* update schema.js with new queries of those models
 
-Server:
+
+## Server:
 to start => Inside server folder terminal : "nodemon expressServer"
 you may need to install nodemon globally
 you will need to verify in the terminal "connected to database" 
@@ -24,7 +28,7 @@ if error you may need to verify your uri in express-server.js to match your atla
 * server includes GraphiQL at http://localhost:4000/graphql which is a helpful gui to test your queries and display available root types (models for query)
 * you will need to populate the db with at least one author and one book with exactly the same types as your models
 
-Front-End React Demo - Books and Authors query and mutations
+## Front-End React Demo - Books and Authors query and mutations
 to start => inside modernClient folder terminal : "yarn dev" or "npm run dev"
 * note schema.js type must match EXACTLY what you set up in your mongoDb Atlas, if your queries are not working this is most likely the issue
 * schema.js is where you can see relations set up for example the field book under author type.  note the use of GraphQLID which is an important type and not just a number
@@ -34,6 +38,4 @@ to start => inside modernClient folder terminal : "yarn dev" or "npm run dev"
     see: https://graphql.org/community/tools-and-libraries/?tags=javascript for the many options, there are options for java and other languages as well.
 
 
-Connecting to your unique data
-* create models of your data shapes
-* update schema.js with new queries of those models
+

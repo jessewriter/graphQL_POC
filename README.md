@@ -8,6 +8,7 @@ This is an updated FORK by Jesse Boyd of the original code by Net Ninja with mod
 
 ## Backend: 
 Create a free account at https://www.mongodb.com/atlas 
+
 1.	Create a MongoDB NoSQL cloud instance.
 2.	Create a free account
 3.	Create a free cluster and use Amazon services
@@ -23,19 +24,21 @@ Create a free account at https://www.mongodb.com/atlas
 ## Server:
 to start => Inside server folder terminal : "nodemon expressServer"
 you may need to install nodemon globally
-you will need to verify in the terminal "connected to database" 
+verify in the terminal "connected to database" 
 if error you may need to verify your uri in express-server.js to match your atlas db
+
 * server includes GraphiQL at http://localhost:4000/graphql which is a helpful gui to test your queries and display available root types (models for query)
 * you will need to populate the db with at least one author and one book with exactly the same types as your models
 
 ## Front-End React Demo - Books and Authors query and mutations
 to start => inside modernClient folder terminal : "yarn dev" or "npm run dev"
+
 * note schema.js type must match EXACTLY what you set up in your mongoDb Atlas, if your queries are not working this is most likely the issue
 * schema.js is where you can see relations set up for example the field book under author type.  note the use of GraphQLID which is an important type and not just a number
 * note models like book.js and author.js which defines model shape and is used for queries
 * addBook.jsx is an example of a mutation which updates the database
 * tanstack useQuery was chosen (previous experience with) but one can also use Apollo Client for making graphQL requests
-    see: https://graphql.org/community/tools-and-libraries/?tags=javascript for the many options, there are options for java and other languages as well.
+*    see: https://graphql.org/community/tools-and-libraries/?tags=javascript for the many options, there are options for java and other languages as well.
 
 
 

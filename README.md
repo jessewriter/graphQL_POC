@@ -28,7 +28,34 @@ verify in the terminal "connected to database"
 if error you may need to verify your uri in express-server.js to match your atlas db
 
 * server includes GraphiQL at http://localhost:4000/graphql which is a helpful gui to test your queries and display available root types (models for query)
-* you will need to populate the db with at least one author and one book with exactly the same types as your models
+* you will need to populate the db with at least one author, book and hvac with exactly the same types as your models
+
+basic hvac query specifying index, use the RootQueryType link in document explorer or tab to see all options
+```
+{
+  hvac(hvacIndex: 1001) {
+    isHealthy
+    airTemp
+    arrays
+  }
+}
+```
+example authors query for graphiQL
+```
+{
+  authors {
+    id
+    name
+    age
+    books {
+      id
+      name
+      genre
+  
+    }
+  }
+}
+```
 
 ## Front-End React Demo - Books and Authors query and mutations
 to start => inside modernClient folder terminal : "yarn dev" or "npm run dev"

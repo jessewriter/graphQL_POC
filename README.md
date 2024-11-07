@@ -25,8 +25,11 @@ Create a free account at https://www.mongodb.com/atlas
 
 ## Server:
 to start => Inside server folder terminal : "nodemon expressServer"
+
 you may need to install nodemon globally
+
 verify in the terminal "connected to database" 
+
 if error you may need to verify your uri in express-server.js to match your atlas db
 
 * server includes GraphiQL at http://localhost:4000/graphql which is a helpful gui to test your queries and display available root types (models for query)

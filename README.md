@@ -16,6 +16,8 @@ Create a free account at https://www.mongodb.com/atlas
 5.	Note: current IP address will be allowed on setup for local connectivity
     a. you can allow all ips by clicking on the ip warning from your admin screen and allowing all ips there or just your new ip address
 
+![alt text](mongodbAtalasDbExample.png)    
+
 ####    Connecting to your unique data
 * create models of your data shapes
 * update schema.js with new queries of those models

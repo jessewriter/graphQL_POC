@@ -9,12 +9,13 @@ const app = express()
 app.use(cors())
 
 // enter your mongodb atlas credentials here
-const userName = 'testuser'
-const password = 'test123'
-const cluster = 'DataApiPrototype'
+const usrPw = process.env.usrPw // set user and password in .env file
+const cluster = 'Cluster0'
 const dbName = 'DataApiPrototype'
 
-const uri = `mongodb+srv://${userName}:${password}@${cluster}.ua3tj.mongodb.net/?retryWrites=true&w=majority`
+console.log('process.env.usrPw = ', process.env.usrPw)
+
+const uri = `mongodb+srv://${usrPw}@${cluster}.kaxm2.mongodb.net/?retryWrites=true&w=majority`
 // Replace the connection string with your MongoDB Atlas details
 // https://www.mongodb.com/docs/drivers/node/current/quick-start/create-a-connection-string/
 

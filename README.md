@@ -24,7 +24,7 @@ Create a free account at https://www.mongodb.com/atlas
 
 
 ## Server:
-to start => Inside server folder terminal : "nodemon express-server"
+to start => Inside server folder terminal : "nodemon  --env-file=.env express-server.js"
 
 you may need to install nodemon globally
 
